@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/header') %>
+  <body>
+    <div class="mainContent">
+      <% if (isCorrectAnswer) { %>
+      <p>
+         Your answer is correct! <br /> Completed the quiz.</p>
+      <% } else { %>
+      <p>Your answer is incorrect</p>
+      <% } %>
+      <p>Your streak is: <%= streak %></p>
+    </div>
+  </body>
+</html>
